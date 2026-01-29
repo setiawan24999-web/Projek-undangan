@@ -1,0 +1,681 @@
+
+/* PART 1 */
+:root{
+    --pink:#f14e95;  
+    --bg:#0a0a0a;
+    --shadow: 0 2px 2px rgb(0, 0, 0/0.5);
+}
+
+body{
+    font-size: 1.2 rem;
+    font-family: 'Work Sans', Sans-serif;
+    min-height: 2000px;
+   padding-top:100px;
+   }
+
+.hero{
+    
+    position:relative;
+min-height: 100vh;
+}
+
+.hero {
+font-weight:bold;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.hero h1{
+font-family: 'Sacramento', cursive;
+font-size:3rem;
+color:white;
+font-weight:bold;
+    font-size:3.8rem;
+   color: #cfcfcf; 
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.hero p{
+    font-size:1.8rem;
+     color: #cfcfcf; 
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    
+}
+.hero h4{
+    font-size:1.9rem;
+     color: #cfcfcf; 
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.hero a{
+    color:var(--pink);
+    background-color:white;
+}
+.hero a:hover {
+    background-color:var(--pink);
+    color:white;
+    
+}
+
+.hero::before {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url(imgs/maried.jpg);
+    z-index:-1;
+   
+      background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+@media (max-width:992px) {
+    html{
+        font-size:75%;
+    }
+}
+@media (max-width:768px) {
+    
+
+     body{
+     overflow-x: hidden;
+
+   }
+
+
+    html{
+        font-size:65%;
+    }
+}
+@media (max-width:576px) {
+   
+     .mynavbar{
+        position: fixed;
+        top: 0;
+    }
+
+    html{
+        font-size:60%;
+    }
+
+  
+}
+
+body {
+    margin: 0;
+   min-height:2000px;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+/* Container jam - TANPA background */
+.wedding-time {
+  .wedding-time {
+    text-align: center;
+    color: #fff;
+    padding-top: 80px; /* ⬅️ INI YANG MENGGESER KE BAWAH */
+}
+
+}
+
+/* Judul acara */
+.wedding-time h3 {
+    font-size:2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+/* Tanggal */
+.wedding-time .date {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+/* Jam */
+.wedding-time .time {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+
+/* Responsive mobile */
+@media (max-width: 480px) {
+    
+
+    .wedding-time .time {
+        letter-spacing: 2px;
+    }
+}
+
+
+
+
+/* PART 2 */
+.mynavbar{
+     position: sticky;
+  z-index: 99;
+    /* background-color: rgba(255, 255, 255, 0.3) !important; */
+    
+    backdrop-filter:blur(4px);
+
+}
+.mynavbar .offcanvas{
+    height:60vh;
+}
+
+
+.navbar .navbar-brand,
+.offcanvas-title{
+   font-weight:bold;
+    font-family:'Sacramento', cursive;
+    font-size:3.2rem;
+}
+
+.mynavbar .nav-link{
+   text-align:center;
+    font-size:1.5rem;
+    text-transform:uppercase;
+}
+
+/* Semua teks navbar diberi outline putih tipis */
+.mynavbar .navbar-brand,
+.mynavbar .nav-link,
+.mynavbar .offcanvas-title{
+    color: inherit;
+    text-shadow:
+        -1px -1px 0 rgba(255,255,255,0.8),
+         1px -1px 0 rgba(255,255,255,0.8),
+        -1px  1px 0 rgba(255,255,255,0.8),
+         1px  1px 0 rgba(255,255,255,0.8);
+}
+
+
+.home{
+    background-image: url(imgs/maried3.png);
+    background-size:cover;
+    min-height:100vh;
+    margin-top:-6rem;
+    padding-top:7rem;
+    padding-bottom:5rem;
+}
+
+.home h2,
+.gallery h2{
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size:5rem;
+    font-size: bold;
+}
+.home h3{
+    color: #444;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+}
+.home p{
+    font-size:1.1rem;
+    color:#666;
+    
+}
+.home .couple{
+    margin-top:50px
+}
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size:2.4rem;
+    color:var(--pink);
+}
+
+.home .couple p {
+   
+    font-size:1rem;
+    
+}
+.home .couple img{
+    width:100%;
+}
+.home .heart{
+    width:50px;
+    height:50px;
+    background-color:white;
+    display:flex;
+    border-radius:50%;
+    box-shadow: rgba(0,0,0,0.5);
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%) translateY(-2.5rem);
+
+}
+.home .heart i{
+    margin: auto;
+    color:var(--var);
+}
+
+
+
+
+
+
+.info{
+    
+   background-color: var(--bg);
+   
+    color:white;
+    padding-top:6.5rem;
+    padding-bottom:8rem;
+  
+}
+
+.info h2,
+.story h2
+{
+
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size:5rem;
+    font-weight:bold;
+
+}
+.info .alamat {
+    font-size: 1.1rem;
+}
+.info .description{
+    font-size: 1rem;
+    font-weight:300
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border:1px solid #999;
+}
+.info .card-header {
+        color:white;
+
+    border:1px solid #999;
+    text-transform:uppercase;
+    letter-spacing:0.1rem;
+}
+.info .card-body {
+        color:white;
+
+font-size:1rem;
+
+}
+.info .card-footer{
+        color:white;
+
+    border-top:#999 1px solid;
+    font-size:1rem;
+    font-weight:0.9rem;
+}
+
+.story {
+    padding-top:10rem;
+    padding-bottom:8rem;
+}
+
+.story span,  .gallery, .gallery span{
+color:#666;
+font-size:0.9rem;
+letter-spacing:1px;
+display:block;
+margin-bottom:1rem;
+}
+
+.story p{
+    font-size:1rem;
+    font-weight:300;
+}
+.timeline {
+    list-style:none;
+    padding:1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+      /* min-height:250px;  */
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:2px;
+    background-color:#ccc;
+    transform: translateX(-50%);
+}
+
+
+
+ .timeline li{
+    position: relative;
+    margin-bottom: 6rem; /* ini kunci urutan ke bawah */
+    min-height: 180px;   /* minimal setinggi gambar */
+}
+
+
+.timeline li::before,
+.timeline li::after{
+    display:'';
+    display:table;
+}
+
+.timeline-li::after{
+    clear:both;
+
+}
+
+
+.timeline li .timeline-image{
+    position:absolute;
+    left:50%;
+    top:0;
+    transform: translateX(-50%);
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background-size:cover;
+    background-position:center;
+    z-index:2;
+}
+
+
+
+.timeline li .timeline-panel{
+    width:40%;
+    float:left;
+    border:1px solid #ccc;
+    padding:2rem;
+    position:relative;
+    border-radius:20px;
+}
+
+
+
+.timeline li .timeline-panel::before{
+content:'';
+display:inline-block;
+position:absolute;
+border-top: 15px solid transparent;
+border-left: 15px solid #ccc;
+border-right: 0 solid #ccc;
+border-bottom:15px solid transparent;
+top:80px;
+right:-15px;
+
+}
+.timeline li .timeline-panel::after{
+content:'';
+display:inline-block;
+position:absolute;
+border-top: 14px solid transparent;
+border-left: 14px solid #ffffff;
+border-right: 0 solid #000000;
+border-bottom:14px solid transparent;
+top:81px;
+right:-13px;
+
+}
+
+
+ /* panel kanan */
+.timeline li.timeline-inverted .timeline-panel{
+    float:right;
+}
+
+/* border luar panah */
+.timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width:0;
+    border-right-width:15px;
+    border-right-color:#ccc;
+    left:-15px;
+    right:auto;
+}
+
+/* isi panah (tengah) */
+.timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width:0;
+    border-right-width:14px;
+    border-right-color:#ffffff; /* isi */
+    left:-13px;
+    right:auto;
+}
+
+ 
+/* ===============================
+   TIMELINE MOBILE – SATU ARAH KIRI
+   =============================== */
+@media (max-width: 768px){
+
+    /* GARIS DI KIRI */
+    .timeline::before{
+        left: 40px;
+    }
+
+    /* ITEM */
+    .timeline li{
+        position: relative;
+        min-height: 120px;
+        margin-bottom: 3rem;
+    }
+
+    /* LINGKARAN */
+    .timeline li .timeline-image{
+        left: 40px;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+    }
+
+    /* KOTAK KONTEN */
+    .timeline li .timeline-panel{
+        float: right;
+        width: calc(100% - 140px);
+        margin-right: 10px;
+        border-radius: 15px;
+    }
+
+    /* MATIKAN MODE ZIG-ZAG */
+    .timeline li.timeline-inverted .timeline-panel{
+        float: right;
+    }
+
+    /* SEGITIGA → MENGHADAP KIRI */
+    .timeline li .timeline-panel::before{
+        content:'';
+        position:absolute;
+        top:40px;
+        left:-15px;
+        right:auto;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid #ccc;
+        border-left: 0;
+    }
+
+    .timeline li .timeline-panel::after{
+        content:'';
+        position:absolute;
+        top:41px;
+        left:-13px;
+        right:auto;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        border-right: 14px solid #fff;
+        border-left: 0;
+    }
+}
+/* tombol hamburger */
+.navbar-toggler {
+  border: 2px solid #fff;   
+  background-color: transparent;
+}
+
+.mynavbar .navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.95) !important;
+  border-radius: 6px;
+}
+
+.mynavbar .navbar-toggler {
+  padding: 6px 8px;
+}
+
+.mynavbar .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+ .gallery{
+    background-color: #f5f5f5;
+ }
+.gallery-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;   
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block;
+}
+#imageOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+#imageOverlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+
+.rsvp h2,
+.gifts h2{
+    color:var(--pink);
+    font-family:'Sacramento';
+    font-size:4.5rem;
+    font-weight:bold;
+   
+}
+
+.gifts p{
+     color:black;
+     padding-bottom:3rem;
+    font-size:1rem;
+    font-weight:300;
+}
+
+.rsvp p,
+{
+     color:white;
+    font-size:1rem;
+    font-weight:300;
+}
+.gifts {
+    background-color: gallery;
+    padding-top:10rem;
+    padding-bottom:10rem;
+}
+
+.rsvp {
+    background-color: var(--bg);
+    padding-top:15rem;
+    padding-bottom:15rem;
+}
+.rsvp form label {
+    color:white;
+}
+.rsvp button{
+background-color: var(--pink);
+color:white;
+border:1px solid var(--pink);
+}
+.rsvp button:hover{
+background-color:white;
+color: var(--pink);
+border:1px solid var(--pink);
+}
+gifts span{
+    teks-transform:uppercase;
+    color:#666;
+    font-size:0.9rem;
+    letter-spacing:1px;
+    display:block;
+    margin-bottom:1rem;
+}
+footer{
+    padding:3rem;
+    background-color:var(--pink);
+    color:white;
+}
+footer a{
+    color:black;
+    font-weight:bold;
+    teks-description:none;
+}
+footer a:hover{
+    color:white;
+    font-weight:bold;
+    teks-description:none;
+}
+footer li{
+    list-style:none;
+    display:inline;
+  
+}
+footer li{
+    margin:0.5rem;
+}
+
+.rsvp p{
+    color:white;
+}
